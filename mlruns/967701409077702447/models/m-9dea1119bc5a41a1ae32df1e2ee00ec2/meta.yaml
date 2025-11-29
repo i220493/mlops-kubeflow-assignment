@@ -1,0 +1,11 @@
+artifact_location: file:///C:/Users/Sameer/mlops-kubeflow-assignment/mlruns/967701409077702447/models/m-9dea1119bc5a41a1ae32df1e2ee00ec2/artifacts
+creation_timestamp: 1764422878128
+experiment_id: '967701409077702447'
+last_updated_timestamp: 1764422878128
+lifecycle_stage: active
+model_id: m-9dea1119bc5a41a1ae32df1e2ee00ec2
+model_type: null
+name: model
+source_run_id: 1869420332f84ae895f139fe1768a4b5
+status: 1
+status_message: null

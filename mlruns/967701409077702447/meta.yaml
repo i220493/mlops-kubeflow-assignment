@@ -1,0 +1,6 @@
+artifact_location: file:///C:/Users/Sameer/mlops-kubeflow-assignment/mlruns/967701409077702447
+creation_time: 1764422831106
+experiment_id: '967701409077702447'
+last_update_time: 1764422831106
+lifecycle_stage: active
+name: housing_pipeline

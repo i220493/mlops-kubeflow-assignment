@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/Sameer/mlops-kubeflow-assignment/mlruns/967701409077702447/1869420332f84ae895f139fe1768a4b5/artifacts
+end_time: 1764422886954
+entry_point_name: ''
+experiment_id: '967701409077702447'
+lifecycle_stage: active
+run_id: 1869420332f84ae895f139fe1768a4b5
+run_name: run1
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1764422833184
+status: 4
+tags: []
+user_id: Sameer
