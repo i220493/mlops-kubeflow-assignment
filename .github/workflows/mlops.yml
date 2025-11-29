@@ -1,23 +1,41 @@
+name: Run ML Pipeline
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
 jobs:
-  build:
+  build-and-run-pipeline:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v4
+      # 1. Checkout the repository
+      - name: Checkout repo
+        uses: actions/checkout@v4
 
-      - name: Set up Python
+      # 2. Set up Python
+      - name: Set up Python 3.11
         uses: actions/setup-python@v4
         with:
           python-version: 3.11
 
+      # 3. Install dependencies
       - name: Install dependencies
-        run: pip install -r requirements.txt
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
 
+      # 4. Run the small pipeline
       - name: Run ML pipeline
         run: python pipeline_small.py
 
-      - name: Upload artifacts
+      # 5. Upload model and metrics as artifacts
+      - name: Upload model and metrics
         uses: actions/upload-artifact@v4
         with:
-          name: model-and-metrics
+          name: ml-artifacts
           path: data/processed/
