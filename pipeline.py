@@ -1,6 +1,7 @@
 import mlflow
-import os
 from src.pipeline_components import fetch_data, preprocess_data, train_model, evaluate_model
+import os
+os.environ["GIT_PYTHON_GIT_EXECUTABLE"] = r"C:\Program Files\Git\cmd\git.exe"
 
 DATA_PATH = "data/raw_data.csv"
 MODEL_PATH = "data/processed/model.pkl"
