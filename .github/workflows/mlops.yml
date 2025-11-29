@@ -25,8 +25,7 @@ jobs:
         pip install -r requirements.txt
         pip install mlflow scikit-learn dvc
 
-    - name: Pull DVC-tracked data
-      run: dvc pull
+    
 
     - name: Run pipeline
       run: python pipeline.py
